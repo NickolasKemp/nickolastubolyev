@@ -18,11 +18,6 @@ function toggleMenu() {
  let slidesAmount = 4.5
 
 
-
-
- console.log(slidesAmount)
-
-
 const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
 	loop: true,
@@ -36,20 +31,16 @@ const swiper = new Swiper('.swiper', {
 	slidesPerView: 4.5,
 	speed: 800,
 
-	// spaceBetween: 200,
 
 });
 
-console.log(swiper.params.slidesPerView)
-// console.log(sliderBlockWidth)
 
 window.addEventListener('resize',  resizeSliderBlockWidth)
 
 
 function resizeSliderBlockWidth() {
 	let sliderBlock = document.querySelector('.about__slider')
-	let sliderBlockWidth = sliderBlock.offsetWidth
-	// slidesAmount = sliderBlockWidth / 600 * 4.5
+	let sliderBlockWidth = sliderBlock.offsetWidth5
 
 	if (sliderBlockWidth < 500) {
 		swiper.params.slidesPerView = 3.5
@@ -128,10 +119,6 @@ const projectPreviewImgs = document.querySelectorAll('.project-preview-img')
 
 console.log(projectPreviewImgs)
 
-// const imgContainer2 = document.querySelector('.container-prev')
-
-
-
 
 if(projectPreviewImgs.length) {
 	for (let element of projectPreviewImgs) {
@@ -139,13 +126,10 @@ if(projectPreviewImgs.length) {
 	const previewModeElement = element.querySelector('.preview-mode')
 
 		element.addEventListener('mouseover', function addPreview(e) {
-			// e.stopPropagation()
-			// overlay.style.display = 'block';
 			previewModeElement.classList.add('_active')
 		})
 
 		element.addEventListener('mouseout', function() {
-			// overlay.style.display = 'none';
 			previewModeElement.classList.remove('_active')
 
 		  })
@@ -153,12 +137,7 @@ if(projectPreviewImgs.length) {
 		
 	}
 
-	// function addPreview(e) {
-	// 	e.target.classList.add()
-	// }
 }
 
 
 
-// fix padding, margins
-// change heigth of header on mobile

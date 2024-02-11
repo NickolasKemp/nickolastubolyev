@@ -594,6 +594,7 @@ body {
 	color: #888888;
 	font-size: var(--fs-20);
 	font-weight: 300;
+	line-height: 1.5;
 }
 
 .header-about__image {
